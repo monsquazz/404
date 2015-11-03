@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>404 not found</title>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css"/>
+</head>
+
+<style>
+audio { display: none; }
+
+@font-face
+{
+    font-family: 8BITWONDERNominal;
+    src: url(images/8BITWONDERNominal.ttf.ttf);
+}
+
+html
+{
+padding: 0;
+margin: 0;
+background: -moz-linear-gradient(top,  #a8fdd1 0%, #2efd94 50%, #003214 100%) no-repeat center center fixed;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8fdd1), color-stop(50%,#2efd94), color-stop(100%,#003214)) no-repeat center center fixed;
+background: -webkit-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%)no-repeat center center fixed;
+background: -o-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
+background: -ms-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
+background: linear-gradient(to bottom,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8fdd1', endColorstr='#003214',GradientType=0 );;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.animated { 
+    -webkit-animation-duration: 0.52s; 
+    animation-duration: 0.52s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes color_change {
+0% { color: blue; }
+25% { color: orange; }
+50% { color: yellow; }
+75% { color: black; }
+100% { color: red; }
+}
+@-moz-keyframes color_change {
+0% { color: blue; }
+25% { color: orange; }
+50% { color: yellow; }
+75% { color: black; }
+100% { color: red; }
+}
+@-ms-keyframes color_change {
+0% { color: blue; }
+25% { color: orange; }
+50% { color: yellow; }
+75% { color: black; }
+100% { color: red; }
+}
+@-o-keyframes color_change {
+0% { color: blue; }
+25% { color: orange; }
+50% { color: yellow; }
+75% { color: black; }
+100% { color: red; }
+}
+@keyframes color_change {
+0% { color: blue; }
+25% { color: orange; }
+50% { color: yellow; }
+75% { color: black; }
+100% { color: red; }
+}
+.color_change { 
+    -webkit-animation-name: color_change; 
+    animation-name: color_change; 
+}
+
+.color_change-change {
+    -webkit-animation: color_change 1s infinite alternate;
+    -moz-animation: color_change 1s infinite alternate;
+    -ms-animation: color_change 1s infinite alternate;
+    -o-animation: color_change 1s infinite alternate;
+    animation: color_change 1s infinite alternate;
+}
+
+
+
+@-webkit-keyframes bounce { 
+    0%, 30% {-webkit-transform: translateY(0);} 
+    10% {-webkit-transform: translateY(-1.5em);} 
+} 
+
+@keyframes bounce { 
+    0%, 30% {transform: translateY(0);} 
+    10% {transform: translateY(-1.5em);} 
+} 
+
+.bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+}
+
+#arrows {
+    position: absolute;
+    z-index: -100;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.arrow
+{
+    background: url(images/arrow.png);
+    width: 125px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.arrow:before, .arrow:after
+{
+    content: '';
+    position: absolute;
+    /* position: absolute; top: 10px; left: 10px; */
+    /* width: 100px; height: 80px; */
+}
+
+.x1 {
+    left: 10%;
+    -webkit-animation: movearrows 7s linear infinite;
+    -moz-animation: movearrows 7s linear infinite;
+    -o-animation: movearrows 7s linear infinite;
+}
+
+.x2 {
+    left: 20%
+    
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6; /*opacity proportional to the size*/
+    
+    /*Speed will also be proportional to the size and opacity*/
+    /*More the speed. Less the time in 's' = seconds*/
+    -webkit-animation: movearrows 5s linear infinite;
+    -moz-animation: movearrows 5s linear infinite;
+    -o-animation: movearrows 5s linear infinite;
+}
+
+.x3 {
+    left: 30%;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    
+    -webkit-animation: movearrows 5s linear infinite;
+    -moz-animation: movearrows 5s linear infinite;
+    -o-animation: movearrows 5s linear infinite;
+}
+
+.x4 {
+    left: 40%;
+    
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75; /*opacity proportional to the size*/
+    
+    -webkit-animation: movearrows 6s linear infinite;
+    -moz-animation: movearrows 6s linear infinite;
+    -o-animation: movearrows 6s linear infinite;
+}
+
+.x5 {
+    left: 50%;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    
+    -webkit-animation: movearrows 7s linear infinite;
+    -moz-animation: movearrows 7s linear infinite;
+    -o-animation: movearrows 7s linear infinite;
+}
+
+.x6 {
+    left: 60%;
+    -webkit-animation: movearrows 4s linear infinite;
+    -moz-animation: movearrows 4s linear infinite;
+    -o-animation: movearrows 4s linear infinite;
+}
+
+.x7 {
+    left: 70%;
+    -webkit-animation: movearrows 5.5s linear infinite;
+    -moz-animation: movearrows 5.5s linear infinite;
+    -o-animation: movearrows 5.5s linear infinite;
+}
+
+.x8 {
+    left: 80%;
+    -webkit-animation: movearrows 6.5s linear infinite;
+    -moz-animation: movearrows 6.5s linear infinite;
+    -o-animation: movearrows 6.5s linear infinite;
+}
+
+.x9 {
+    left: 90%;
+    -webkit-animation: movearrows 7.5s linear infinite;
+    -moz-animation: movearrows 7.5s linear infinite;
+    -o-animation: movearrows 7.5s linear infinite;
+}
+
+@-webkit-keyframes movearrows {
+    0% {margin-top: 100%;}
+    100% {margin-top: -150px;}
+}
+@-moz-keyframes movearrows {
+    0% {margin-top: 100%;}
+    100% {margin-top: -150px;}
+}
+@-o-keyframes movearrows {
+    0% {margin-top: 100%;}
+    100% {margin-top: -150px;}
+}
+
+h1, p
+{
+    text-align: center;
+    font-size: 3em;
+    font-family: '8BITWONDERNominal'; 
+}
+
+.monsquaz {
+    background: url(images/monsquaz.png) no-repeat;
+    background-size:100%;
+    position: absolute;
+    width: 300px;
+    height: 600px;
+}
+
+#monsquaz-left
+{
+    position: absolute;
+    left: 0;
+}
+
+#monsquaz-right
+{
+    position: relative;
+    right: 0%;
+     -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#monsquaz-twins
+{
+    position: absolute;
+    bottom: 600px;
+    width: 100%;
+    z-index: -50;
+}
+
+#content
+{
+    z-index: 100;
+}
+
+</style>
+
+<body>
+<audio loop="true" autoplay="true" src="images/transjarski.ogg" type="audio/ogg"></audio>
+<div id="monsquaz-twins">
+    <div id="monsquaz-left"><div class="monsquaz animated bounce"></div></div>  
+    <div id="monsquaz-right"><div class="monsquaz animated bounce"></div></div>
+</div>
+<div id="content">
+    <!--<h1>404 Not Found</h1>-->
+    <p>We are extremely sorry</p>
+    <p>The page<br>you just tried to visit<br>cannot be found</p>
+    <p><a href="#">intcraft.eu</a></p>
+</div>
+<div id="arrows">
+    <div class="arrow x1"></div>
+    <div class="arrow x2"></div>
+    <div class="arrow x3"></div>
+    <div class="arrow x4"></div>
+    <div class="arrow x5"></div>
+    <div class="arrow x6"></div>
+    <div class="arrow x7"></div>
+    <div class="arrow x8"></div>
+    <div class="arrow x9"></div>
+</div>
+
+</body>
+
+</html>
+
+
+
+
