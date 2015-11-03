@@ -83,20 +83,22 @@ body
 75% { color: black; }
 100% { color: red; }
 }
-.color_change { 
-    -webkit-animation-name: color_change; 
-    animation-name: color_change; 
-}
 
-.color_change-change {
+#content {
     -webkit-animation: color_change 1s infinite alternate;
     -moz-animation: color_change 1s infinite alternate;
     -ms-animation: color_change 1s infinite alternate;
     -o-animation: color_change 1s infinite alternate;
     animation: color_change 1s infinite alternate;
+    text-shadow: 5px 5px #000000;
 }
 
-
+#content {
+    animation-name: color_change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 @-webkit-keyframes bounce { 
     0%, 30% {-webkit-transform: translateY(0);} 
@@ -150,9 +152,7 @@ body
 }
 
 .x2 {
-    left: 20%
-    
-    -webkit-transform: scale(0.6);
+    left: 20%    -webkit-transform: scale(0.6);
     -moz-transform: scale(0.6);
     transform: scale(0.6);
     opacity: 0.6; /*opacity proportional to the size*/
@@ -294,7 +294,7 @@ h1, p
 
 <body>
 <audio loop="true" autoplay="true" src="images/transjarski.ogg" type="audio/ogg"></audio>
-<div id="monsquaz-twins">
+<div id="monsquaz-twins" class="color">
     <div id="monsquaz-left"><div class="monsquaz animated bounce"></div></div>  
     <div id="monsquaz-right"><div class="monsquaz animated bounce"></div></div>
 </div>
@@ -302,7 +302,7 @@ h1, p
     <!--<h1>404 Not Found</h1>-->
     <p>We are extremely sorry</p>
     <p>The page<br>you just tried to visit<br>cannot be found</p>
-    <p><a href="#">intcraft.eu</a></p>
+    <!--<p><a href="#">intcraft.eu</a></p>-->
 </div>
 <div id="arrows">
     <div class="arrow x1"></div>
