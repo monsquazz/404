@@ -11,7 +11,7 @@ audio { display: none; }
 @font-face
 {
     font-family: 8BITWONDERNominal;
-    src: url(images/8BITWONDERNominal.ttf.ttf);
+    src: url(images/8BITWONDERNominal.ttf);
 }
 
 html
@@ -25,6 +25,7 @@ background: -o-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-rep
 background: -ms-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
 background: linear-gradient(to bottom,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8fdd1', endColorstr='#003214',GradientType=0 );;
+/*background: url(images/bg1.gif);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,8 +39,8 @@ body
 }
 
 .animated { 
-    -webkit-animation-duration: 0.52s; 
-    animation-duration: 0.52s; 
+    -webkit-animation-duration: 0.49s;
+    animation-duration: 0.49s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
     -webkit-animation-timing-function: linear; 
@@ -52,35 +53,35 @@ body
 0% { color: blue; }
 25% { color: orange; }
 50% { color: yellow; }
-75% { color: black; }
+75% { color: lime; }
 100% { color: red; }
 }
 @-moz-keyframes color_change {
 0% { color: blue; }
 25% { color: orange; }
 50% { color: yellow; }
-75% { color: black; }
+75% { color: lime; }
 100% { color: red; }
 }
 @-ms-keyframes color_change {
 0% { color: blue; }
 25% { color: orange; }
 50% { color: yellow; }
-75% { color: black; }
+75% { color: lime; }
 100% { color: red; }
 }
 @-o-keyframes color_change {
 0% { color: blue; }
 25% { color: orange; }
 50% { color: yellow; }
-75% { color: black; }
-100% { color: red; }
+75% { color: lime; }
+100% { color: lime; }
 }
 @keyframes color_change {
 0% { color: blue; }
 25% { color: orange; }
 50% { color: yellow; }
-75% { color: black; }
+75% { color: lime; }
 100% { color: red; }
 }
 
@@ -152,7 +153,8 @@ body
 }
 
 .x2 {
-    left: 20%    -webkit-transform: scale(0.6);
+    left: 20%;   
+    -webkit-transform: scale(0.6);
     -moz-transform: scale(0.6);
     transform: scale(0.6);
     opacity: 0.6; /*opacity proportional to the size*/
@@ -247,28 +249,37 @@ body
 h1, p
 {
     text-align: center;
-    font-size: 3em;
     font-family: '8BITWONDERNominal'; 
+}
+
+h1
+{
+        font-size: 9em;
+}
+
+p
+{
+        font-size: 3em;
 }
 
 .monsquaz {
     background: url(images/monsquaz.png) no-repeat;
     background-size:100%;
     position: absolute;
-    width: 300px;
-    height: 600px;
+    width: 350px;
+    height: 700px;
 }
 
 #monsquaz-left
 {
     position: absolute;
-    left: 0;
+    left: 2%;
 }
 
 #monsquaz-right
 {
     position: relative;
-    right: 0%;
+    right: 2%;
      -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -280,7 +291,7 @@ h1, p
 #monsquaz-twins
 {
     position: absolute;
-    bottom: 600px;
+    bottom: 700px;
     width: 100%;
     z-index: -50;
 }
@@ -299,7 +310,7 @@ h1, p
     <div id="monsquaz-right"><div class="monsquaz animated bounce"></div></div>
 </div>
 <div id="content">
-    <!--<h1>404 Not Found</h1>-->
+    <h1>4O4</h1>
     <p>We are extremely sorry</p>
     <p>The page<br>you just tried to visit<br>cannot be found</p>
     <!--<p><a href="#">intcraft.eu</a></p>-->
