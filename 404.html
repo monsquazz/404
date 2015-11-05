@@ -5,6 +5,7 @@
 </head>
 
 <style>
+
 audio { display: none; }
 
 @font-face
@@ -17,20 +18,19 @@ audio { display: none; }
 
 html
 {
-padding: 0;
-margin: 0;
-background: -moz-linear-gradient(top,  #a8fdd1 0%, #2efd94 50%, #003214 100%) no-repeat center center fixed;
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8fdd1), color-stop(50%,#2efd94), color-stop(100%,#003214)) no-repeat center center fixed;
-background: -webkit-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%)no-repeat center center fixed;
-background: -o-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
-background: -ms-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
-background: linear-gradient(to bottom,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8fdd1', endColorstr='#003214',GradientType=0 );;
-/*background: url(images/bg1.gif);*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    padding: 0;
+    margin: 0;
+    background: -moz-linear-gradient(top,  #a8fdd1 0%, #2efd94 50%, #003214 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8fdd1), color-stop(50%,#2efd94), color-stop(100%,#003214)) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%)no-repeat center center fixed;
+    background: -o-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
+    background: -ms-linear-gradient(top,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
+    background: linear-gradient(to bottom,  #a8fdd1 0%,#2efd94 50%,#003214 100%) no-repeat center center fixed;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8fdd1', endColorstr='#003214',GradientType=0 );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body
@@ -39,85 +39,165 @@ body
     margin: 0;
 }
 
-.animated { 
-    -webkit-animation-duration: 0.49s;
-    animation-duration: 0.49s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: linear; 
-    animation-timing-function: linear; 
-    animation-iteration-count:infinite; 
-    -webkit-animation-iteration-count:infinite; 
-} 
-
-@-webkit-keyframes color_change {
-0% { color: blue; }
-25% { color: orange; }
-50% { color: yellow; }
-75% { color: lime; }
-100% { color: red; }
+@-webkit-keyframes color_change
+{
+    0% { color: blue; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: lime; }
+    100% { color: red; }
 }
-@-moz-keyframes color_change {
-0% { color: blue; }
-25% { color: orange; }
-50% { color: yellow; }
-75% { color: lime; }
-100% { color: red; }
+@-moz-keyframes color_change
+{
+    0% { color: blue; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: lime; }
+    100% { color: red; }
 }
-@-ms-keyframes color_change {
-0% { color: blue; }
-25% { color: orange; }
-50% { color: yellow; }
-75% { color: lime; }
-100% { color: red; }
+@-ms-keyframes color_change
+{
+    0% { color: blue; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: lime; }
+    100% { color: red; }
 }
-@-o-keyframes color_change {
-0% { color: blue; }
-25% { color: orange; }
-50% { color: yellow; }
-75% { color: lime; }
-100% { color: lime; }
+@-o-keyframes color_change
+{
+    0% { color: blue; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: lime; }
+    100% { color: lime; }
 }
-@keyframes color_change {
-0% { color: blue; }
-25% { color: orange; }
-50% { color: yellow; }
-75% { color: lime; }
-100% { color: red; }
+@keyframes color_change
+{
+    0% { color: blue; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: lime; }
+    100% { color: red; }
 }
 
-#content {
+#content
+{
+    text-shadow: 5px 5px #000000;
+
     -webkit-animation: color_change 1s infinite alternate;
     -moz-animation: color_change 1s infinite alternate;
     -ms-animation: color_change 1s infinite alternate;
     -o-animation: color_change 1s infinite alternate;
     animation: color_change 1s infinite alternate;
-    text-shadow: 5px 5px #000000;
-}
 
-#content {
     animation-name: color_change;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+    z-index: 100;
 }
 
-@-webkit-keyframes bounce { 
+@-webkit-keyframes bounce
+{ 
     0%, 30% {-webkit-transform: translateY(0);} 
     10% {-webkit-transform: translateY(-1.5em);} 
 } 
 
-@keyframes bounce { 
+@keyframes bounce
+{
     0%, 30% {transform: translateY(0);} 
     10% {transform: translateY(-1.5em);} 
+}
+
+@-webkit-keyframes bounce-text
+{
+    0% {-webkit-transform: translateY(0);} 
+    50% {-webkit-transform: translateY(1.5em);} 
+    100% {-webkit-transform: translateY(0);}
 } 
 
-.bounce { 
+@keyframes bounce-text
+{
+    0% {transform: translateY(0);} 
+    50% {transform: translateY(1.5em);} 
+    100% {transform: translateY(0);} 
+}
+
+@-webkit-keyframes digit
+{
+    0% {-webkit-transform: translateY(0);} 
+    50% {-webkit-transform: translateY(-0.5em);} 
+    0% {-webkit-transform: translateY(0);}
+} 
+
+@keyframes digit
+{
+    0% {transform: translateY(0);} 
+    50% {transform: translateY(-0.5em);} 
+    0% {transform: translateY(0);} 
+}
+
+.animated
+{
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+}
+
+.beat
+{
+    -webkit-animation-duration: 0.48s;
+    animation-duration: 0.48s; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear;
+}
+
+.double-beat
+{
+    -webkit-animation-duration: 0.96s;
+    animation-duration: 0.96s;
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
+}
+
+.bounce
+{
     -webkit-animation-name: bounce; 
     animation-name: bounce; 
 }
 
-#arrows {
+.bounce-text
+{
+    -webkit-animation-name: bounce-text; 
+    animation-name: bounce-text; 
+}
+
+.digit1
+{
+    -webkit-animation-name: digit; 
+    animation-name: digit; 
+}
+
+.digit2
+{
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+    -webkit-animation-name: digit; 
+    animation-name: digit; 
+}
+
+.digit3
+{
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-name: digit; 
+    animation-name: digit; 
+}
+
+#arrows
+{
     position: absolute;
     z-index: -100;
     top: 0px;
@@ -142,96 +222,216 @@ body
 {
     content: '';
     position: absolute;
-    /* position: absolute; top: 10px; left: 10px; */
-    /* width: 100px; height: 80px; */
 }
 
-.x1 {
-    left: 10%;
-    -webkit-animation: movearrows 7s linear infinite;
-    -moz-animation: movearrows 7s linear infinite;
-    -o-animation: movearrows 7s linear infinite;
-}
-
-.x2 {
-    left: 20%;   
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    transform: scale(0.6);
-    opacity: 0.6; /*opacity proportional to the size*/
-    
-    /*Speed will also be proportional to the size and opacity*/
-    /*More the speed. Less the time in 's' = seconds*/
+.x1
+{
+    left: 5%;
     -webkit-animation: movearrows 5s linear infinite;
     -moz-animation: movearrows 5s linear infinite;
     -o-animation: movearrows 5s linear infinite;
 }
 
-.x3 {
-    left: 30%;
-    
+.x2
+{
+    left: 10%;
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     transform: scale(0.8);
-    opacity: 0.8; /*opacity proportional to the size*/
-    
-    -webkit-animation: movearrows 5s linear infinite;
-    -moz-animation: movearrows 5s linear infinite;
-    -o-animation: movearrows 5s linear infinite;
+    opacity: 0.8;
+
+    -webkit-animation: movearrows 9s linear infinite;
+    -moz-animation: movearrows 9s linear infinite;
+    -o-animation: movearrows 9s linear infinite;
 }
 
-.x4 {
-    left: 40%;
-    
-    -webkit-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    transform: scale(0.75);
-    opacity: 0.75; /*opacity proportional to the size*/
+.x3
+{
+    left: 15%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6;
     
     -webkit-animation: movearrows 6s linear infinite;
     -moz-animation: movearrows 6s linear infinite;
     -o-animation: movearrows 6s linear infinite;
 }
 
-.x5 {
-    left: 50%;
+.x4
+{
+    left: 20%;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75;
     
+    -webkit-animation: movearrows 8s linear infinite;
+    -moz-animation: movearrows 8s linear infinite;
+    -o-animation: movearrows 8s linear infinite;
+}
+
+.x5
+{
+    left: 25%;
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     transform: scale(0.8);
-    opacity: 0.8; /*opacity proportional to the size*/
-    
+    opacity: 0.8;
+
     -webkit-animation: movearrows 7s linear infinite;
     -moz-animation: movearrows 7s linear infinite;
     -o-animation: movearrows 7s linear infinite;
 }
 
-.x6 {
-    left: 60%;
-    -webkit-animation: movearrows 4s linear infinite;
-    -moz-animation: movearrows 4s linear infinite;
-    -o-animation: movearrows 4s linear infinite;
+.x6
+{
+    left: 30%;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.9;
+    -webkit-animation: movearrows 7.15s linear infinite;
+    -moz-animation: movearrows 7.15s linear infinite;
+    -o-animation: movearrows 7.15s linear infinite;
 }
 
 .x7 {
-    left: 70%;
+    left: 35%;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.5;
     -webkit-animation: movearrows 5.5s linear infinite;
     -moz-animation: movearrows 5.5s linear infinite;
     -o-animation: movearrows 5.5s linear infinite;
 }
 
-.x8 {
-    left: 80%;
+.x8
+{
+    left: 40%;
     -webkit-animation: movearrows 6.5s linear infinite;
     -moz-animation: movearrows 6.5s linear infinite;
     -o-animation: movearrows 6.5s linear infinite;
 }
 
-.x9 {
-    left: 90%;
+.x9
+{
+    left: 45%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
     -webkit-animation: movearrows 7.5s linear infinite;
     -moz-animation: movearrows 7.5s linear infinite;
     -o-animation: movearrows 7.5s linear infinite;
+}
+
+.x10
+{
+    left: 50%;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0.7;
+    -webkit-animation: movearrows 7.75s linear infinite;
+    -moz-animation: movearrows 7.75s linear infinite;
+    -o-animation: movearrows 7.75s linear infinite;
+}
+
+.x11
+{
+    left: 55%;
+    -webkit-animation: movearrows 6.75s linear infinite;
+    -moz-animation: movearrows 6.75s linear infinite;
+    -o-animation: movearrows 6.75s linear infinite;
+}
+
+.x12
+{
+    left: 60%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    -webkit-animation: movearrows 8.75s linear infinite;
+    -moz-animation: movearrows 8.75s linear infinite;
+    -o-animation: movearrows 8.75s linear infinite;
+}
+
+.x13
+{
+    left: 65%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6;
+
+    -webkit-animation: movearrows 9.95s linear infinite;
+    -moz-animation: movearrows 9.95s linear infinite;
+    -o-animation: movearrows 9.95s linear infinite;
+}
+
+.x14
+{
+    left: 70%;
+    -webkit-animation: movearrows 5.85s linear infinite;
+    -moz-animation: movearrows 5.85s linear infinite;
+    -o-animation: movearrows 5.85s linear infinite;
+}
+
+.x15
+{
+    left: 75%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6;
+
+    -webkit-animation: movearrows 12.75s linear infinite;
+    -moz-animation: movearrows 12.75s linear infinite;
+    -o-animation: movearrows 12.75s linear infinite;
+}
+
+.x16
+{
+    left: 80%;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.9;
+
+    -webkit-animation: movearrows 8.25s linear infinite;
+    -moz-animation: movearrows 8.25s linear infinite;
+    -o-animation: movearrows 8.255s linear infinite;
+}
+
+.x17
+{
+    left: 85%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    -webkit-animation: movearrows 7.25s linear infinite;
+    -moz-animation: movearrows 7.25s linear infinite;
+    -o-animation: movearrows 7.255s linear infinite;
+}
+
+.x18
+{
+    left: 90%;
+    -webkit-animation: movearrows 6.75s linear infinite;
+    -moz-animation: movearrows 6.75s linear infinite;
+    -o-animation: movearrows 6.75s linear infinite;
+}
+
+.x19
+{
+    left: 95%;
+    -webkit-animation: movearrows 9.15s linear infinite;
+    -moz-animation: movearrows 9.15s linear infinite;
+    -o-animation: movearrows 9.15s linear infinite;
 }
 
 @-webkit-keyframes movearrows {
@@ -247,7 +447,7 @@ body
     100% {margin-top: -150px;}
 }
 
-h1, p
+h1, p, marquee
 {
     text-align: center;
     font-family: '8BITWONDERNominal'; 
@@ -258,12 +458,13 @@ h1
         font-size: 9em;
 }
 
-p
+p, marquee
 {
         font-size: 3em;
 }
 
-.monsquaz {
+.monsquaz
+{
     background: url(images/monsquaz.png) no-repeat;
     background-size:100%;
     position: absolute;
@@ -297,39 +498,42 @@ p
     z-index: -50;
 }
 
-#content
-{
-    z-index: 100;
-}
-
 </style>
-
-<body>
-<audio loop="true" autoplay="true" src="images/transjarski.ogg" type="audio/ogg"></audio>
-<div id="monsquaz-twins" class="color">
-    <div id="monsquaz-left"><div class="monsquaz animated bounce"></div></div>  
-    <div id="monsquaz-right"><div class="monsquaz animated bounce"></div></div>
-</div>
-<div id="content">
-    <h1>4O4</h1>
-    <p>We are extremely sorry</p>
-    <p>The page<br>you just tried to visit<br>cannot be found</p>
-    <!--<p><a href="#">intcraft.eu</a></p>-->
-</div>
-<div id="arrows">
-    <div class="arrow x1"></div>
-    <div class="arrow x2"></div>
-    <div class="arrow x3"></div>
-    <div class="arrow x4"></div>
-    <div class="arrow x5"></div>
-    <div class="arrow x6"></div>
-    <div class="arrow x7"></div>
-    <div class="arrow x8"></div>
-    <div class="arrow x9"></div>
-</div>
-
-</body>
-
+    <body>
+        <audio loop="true" autoplay="true" src="images/transjarski.ogg" type="audio/ogg"></audio>
+        <div id="monsquaz-twins" class="color">
+            <div id="monsquaz-left"><div class="monsquaz animated beat bounce"></div></div>  
+            <div id="monsquaz-right"><div class="monsquaz animated beat bounce"></div></div>
+        </div>
+        <div id="content">
+            <h1><span class="animated bounce-text double-beat digit1">4</span><span class="animated bounce-text double-beat digit2">O</span><span class="animated bounce-text double-beat digit3">4</span></h1>
+            <p>We are extremely sorry</p>
+            <p>The page<br>you just tried to visit<br>cannot be found</p>
+            <marquee scrollamount="15" class="animated double-beat bounce-text">Greetings to: ChienAndalou, deletethis, Zyklon_Ben, GameCrazy01, Swiss_Dave, BeefTenderloyn, LightningLenin, SkyZ0ne, Swim126, Confused2570, Game_Tutorial, Autodonger, RedMajora and others!</marquee>
+            <!--<p><a href="#">intcraft.eu</a></p>-->
+        </div>
+        <div id="arrows">
+            <div class="arrow x1"></div>
+            <div class="arrow x2"></div>
+            <div class="arrow x3"></div>
+            <div class="arrow x4"></div>
+            <div class="arrow x5"></div>
+            <div class="arrow x6"></div>
+            <div class="arrow x7"></div>
+            <div class="arrow x8"></div>
+            <div class="arrow x9"></div>
+            <div class="arrow x10"></div>
+            <div class="arrow x11"></div>
+            <div class="arrow x12"></div>
+            <div class="arrow x13"></div>
+            <div class="arrow x14"></div>
+            <div class="arrow x15"></div>
+            <div class="arrow x16"></div>
+            <div class="arrow x17"></div>
+            <div class="arrow x18"></div>
+            <div class="arrow x19"></div>
+        </div>
+    </body>
 </html>
 
 
