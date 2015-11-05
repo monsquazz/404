@@ -39,6 +39,11 @@ body
     margin: 0;
 }
 
+span
+{
+    display: inline-block;
+}
+
 @-webkit-keyframes color_change
 {
     0% { color: blue; }
@@ -100,34 +105,34 @@ body
 
 @-webkit-keyframes bounce
 { 
-    0%, 30% {-webkit-transform: translateY(0);} 
-    10% {-webkit-transform: translateY(-1.5em);} 
+    0%, 30% {-webkit-transform: translateY(0);}
+    10% {-webkit-transform: translateY(-1.5em);}
 } 
 
 @keyframes bounce
 {
-    0%, 30% {transform: translateY(0);} 
-    10% {transform: translateY(-1.5em);} 
+    0%, 30% {transform: translateY(0);}
+    10% {transform: translateY(-1.5em);}
 }
 
 @-webkit-keyframes bounce-text
 {
-    0% {-webkit-transform: translateY(0);} 
-    50% {-webkit-transform: translateY(1.5em);} 
+    0% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(1.5em);}
     100% {-webkit-transform: translateY(0);}
 } 
 
 @keyframes bounce-text
 {
-    0% {transform: translateY(0);} 
-    50% {transform: translateY(1.5em);} 
-    100% {transform: translateY(0);} 
+    0% {transform: translateY(0);}
+    50% {transform: translateY(1.5em);}
+    100% {transform: translateY(0);}
 }
 
 @-webkit-keyframes digit
 {
-    0% {-webkit-transform: translateY(0);} 
-    50% {-webkit-transform: translateY(-0.5em);} 
+    0% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(-0.5em);}
     0% {-webkit-transform: translateY(0);}
 } 
 
@@ -140,17 +145,17 @@ body
 
 .animated
 {
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    animation-iteration-count:infinite; 
-    -webkit-animation-iteration-count:infinite; 
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
 }
 
 .beat
 {
     -webkit-animation-duration: 0.48s;
-    animation-duration: 0.48s; 
-    -webkit-animation-timing-function: linear; 
+    animation-duration: 0.48s;
+    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
@@ -158,42 +163,44 @@ body
 {
     -webkit-animation-duration: 0.96s;
     animation-duration: 0.96s;
-    -webkit-animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
 }
 
 .bounce
 {
-    -webkit-animation-name: bounce; 
-    animation-name: bounce; 
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
 }
 
 .bounce-text
 {
-    -webkit-animation-name: bounce-text; 
-    animation-name: bounce-text; 
+    -webkit-animation-name: bounce-text;
+    animation-name: bounce-text;
 }
 
 .digit1
 {
-    -webkit-animation-name: digit; 
-    animation-name: digit; 
+    -webkit-animation-name: digit;
+    animation-name: digit;
 }
 
 .digit2
 {
     -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
     animation-delay: 0.1s;
-    -webkit-animation-name: digit; 
-    animation-name: digit; 
+    -webkit-animation-name: digit;
+    animation-name: digit;
 }
 
 .digit3
 {
     -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
     animation-delay: 0.2s;
-    -webkit-animation-name: digit; 
-    animation-name: digit; 
+    -webkit-animation-name: digit;
+    animation-name: digit;
 }
 
 #arrows
@@ -291,6 +298,7 @@ body
     -moz-transform: scale(0.9);
     transform: scale(0.9);
     opacity: 0.9;
+
     -webkit-animation: movearrows 7.15s linear infinite;
     -moz-animation: movearrows 7.15s linear infinite;
     -o-animation: movearrows 7.15s linear infinite;
@@ -302,6 +310,7 @@ body
     -moz-transform: scale(0.5);
     transform: scale(0.5);
     opacity: 0.5;
+
     -webkit-animation: movearrows 5.5s linear infinite;
     -moz-animation: movearrows 5.5s linear infinite;
     -o-animation: movearrows 5.5s linear infinite;
@@ -322,6 +331,7 @@ body
     -moz-transform: scale(0.8);
     transform: scale(0.8);
     opacity: 0.8;
+
     -webkit-animation: movearrows 7.5s linear infinite;
     -moz-animation: movearrows 7.5s linear infinite;
     -o-animation: movearrows 7.5s linear infinite;
@@ -334,6 +344,7 @@ body
     -moz-transform: scale(0.7);
     transform: scale(0.7);
     opacity: 0.7;
+
     -webkit-animation: movearrows 7.75s linear infinite;
     -moz-animation: movearrows 7.75s linear infinite;
     -o-animation: movearrows 7.75s linear infinite;
@@ -354,6 +365,7 @@ body
     -moz-transform: scale(0.8);
     transform: scale(0.8);
     opacity: 0.8;
+
     -webkit-animation: movearrows 8.75s linear infinite;
     -moz-animation: movearrows 8.75s linear infinite;
     -o-animation: movearrows 8.75s linear infinite;
@@ -413,6 +425,7 @@ body
     -moz-transform: scale(0.8);
     transform: scale(0.8);
     opacity: 0.8;
+
     -webkit-animation: movearrows 7.25s linear infinite;
     -moz-animation: movearrows 7.25s linear infinite;
     -o-animation: movearrows 7.255s linear infinite;
@@ -434,15 +447,18 @@ body
     -o-animation: movearrows 9.15s linear infinite;
 }
 
-@-webkit-keyframes movearrows {
+@-webkit-keyframes movearrows
+{
     0% {margin-top: 100%;}
     100% {margin-top: -150px;}
 }
-@-moz-keyframes movearrows {
+@-moz-keyframes movearrows
+{
     0% {margin-top: 100%;}
     100% {margin-top: -150px;}
 }
-@-o-keyframes movearrows {
+@-o-keyframes movearrows
+{
     0% {margin-top: 100%;}
     100% {margin-top: -150px;}
 }
@@ -455,12 +471,12 @@ h1, p, marquee
 
 h1
 {
-        font-size: 9em;
+    font-size: 9em;
 }
 
 p, marquee
 {
-        font-size: 3em;
+    font-size: 3em;
 }
 
 .monsquaz
@@ -506,7 +522,9 @@ p, marquee
             <div id="monsquaz-right"><div class="monsquaz animated beat bounce"></div></div>
         </div>
         <div id="content">
-            <h1><span class="animated bounce-text double-beat digit1">4</span><span class="animated bounce-text double-beat digit2">O</span><span class="animated bounce-text double-beat digit3">4</span></h1>
+            <h1>
+                <span class="animated bounce-text double-beat digit1">4</span><span class="animated bounce-text double-beat digit2">O</span><span class="animated bounce-text double-beat digit3">4</span>
+            </h1>
             <p>We are extremely sorry</p>
             <p>The page<br>you just tried to visit<br>cannot be found</p>
             <!--<marquee scrollamount="15" class="animated double-beat bounce-text">Greetings to: ChienAndalou, deletethis, Zyklon_Ben, GameCrazy01, Swiss_Dave, BeefTenderloyn, LightningLenin, SkyZ0ne, Swim126, Confused2570, Game_Tutorial, Autodonger, RedMajora and others!</marquee>-->
